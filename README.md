@@ -20,11 +20,11 @@ No API or server required.
 
 ## Regenerating
 
-The site is built from the [supervisor-website](https://github.com/auto-layer/supervisor-website) monorepo:
+The site is built from the [supervisor-website](https://github.com/auto-layer/supervisor-website) monorepo. Use **`BASE_PATH=/site/`** so assets and routes work on GitHub Pages (`https://<org>.github.io/site/`):
 
 ```bash
 # From supervisor-website root
-pnpm --filter @workspace/foundry-site run build
+BASE_PATH=/site/ pnpm --filter @workspace/foundry-site run build
 cp -r artifacts/foundry-site/dist/public/* path/to/site/
 ```
 
