@@ -1,0 +1,30 @@
+# Foundry
+
+> Foundry is a persistent orchestration layer for AI-assisted software development, transforming multi-agent coding into an autonomous, deterministic software factory.
+
+Foundry manages long-running development loops with strict sandbox confinement, git worktree isolation, deterministic validation gates, and resilient queue recovery. It is available in two editions: the public open-source core and the extended turnkey in-house enterprise distribution.
+
+## Repositories & Editions
+
+- [Foundry Open-Source Core](https://github.com/ai-supervisor-foundry/foundry): Public GitHub repository. Self-hostable core orchestration engine, CLI, local task queue, and validation primitives. Free and open source under the MIT license.
+- [Foundry Enterprise Commercial License](https://ai-supervisor-foundry.github.io/site/#editions): Commercial distribution ($4,999 one-time license). High-throughput multi-worktree concurrency, universal MCP bridge, multi-surface control plane, 1 year of continuous updates, and dedicated support SLA (self-hosted, distinct from upcoming cloud SaaS).
+- [Upcoming Cloud SaaS](https://ai-supervisor-foundry.github.io/site/#editions): Managed multi-tenant cloud platform on roadmap, featuring a Freemium starter tier for hosted agent execution.
+
+## System Architecture
+
+- [High-Level Flow](https://ai-supervisor-foundry.github.io/site/#how-it-works): Operator Goal & Task ingestion -> Supervisor Orchestration -> Isolated Git Worktree Execution -> AST/Test Validation Gates -> Verified Shippable PR.
+- [Deep-Dive Architecture](https://ai-supervisor-foundry.github.io/site/#system-architecture): Detailed breakdown of the PM2 supervisor loop, queue locks, multi-provider fallbacks, worker pools, and persistent state storage.
+- [Editions & Commercial Licensing](https://ai-supervisor-foundry.github.io/site/#editions): Comparison of the Open-Source Core vs. the $4,999 Turnkey In-House Enterprise edition and upcoming SaaS.
+
+## Documentation
+
+- [Getting Started](https://ai-supervisor-foundry.github.io/site/docs#getting-started): Quickstart, installation, and environment setup.
+- [Architecture & Control Loop](https://ai-supervisor-foundry.github.io/site/docs#architecture): How the supervisor schedules, executes, and validates tasks.
+- [Task Schema & Lifecycle](https://ai-supervisor-foundry.github.io/site/docs#task-schema): Comprehensive schema for tasks, dependencies, and state transitions.
+- [Deterministic Validation](https://ai-supervisor-foundry.github.io/site/docs#validation): Zero-LLM verification using Regex, AST analysis, and test suites.
+- [Safety & Sandbox Confinement](https://ai-supervisor-foundry.github.io/site/docs#safety): Command sanitization, path restrictions, and blast-radius controls.
+
+## Optional
+
+- [Software Factory Principles](https://ai-supervisor-foundry.github.io/site/wiki#core-principles): The philosophical model behind autonomous software engineering.
+- [Troubleshooting & Recovery](https://ai-supervisor-foundry.github.io/site/docs#recovery): Crash resilience, PM2 process management, and queue recovery.

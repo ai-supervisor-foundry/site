@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+
+# Agent & LLM Specifications
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Sitemaps
 Sitemap: https://ai-supervisor-foundry.github.io/site/sitemap.xml

@@ -1,0 +1,45 @@
+# Foundry: Full Context Documentation
+
+> Foundry is a persistent orchestration layer for AI-assisted software development, transforming multi-agent coding into an autonomous, deterministic software factory.
+
+## Executive Summary
+
+Foundry replaces chaotic, prompt-and-pray AI chat interfaces with an industrial control plane. Rather than asking an AI model to edit files directly in your main working branch, Foundry ingests high-level goals and structured task breakdowns, spawns worker agents inside isolated Git worktrees, verifies every proposed modification through multi-tiered deterministic validation (regex, AST syntax checks, unit/integration test suites), and only merges verified, passing code into clean branches and pull requests.
+
+## Distribution Tiers
+
+### 1. Foundry Open-Source Core (Public)
+- Repository: https://github.com/ai-supervisor-foundry/foundry
+- License: MIT
+- Scope:
+  - Standalone supervisor control loop.
+  - Redis/Dragonfly task queue and state management.
+  - Multi-provider AI CLI execution (Cursor, Claude Code, Gemini, Ollama).
+  - Git worktree worker isolation.
+  - Deterministic regex & AST validation engine.
+  - Terminal CLI and local Web UI dashboard.
+
+### 2. Foundry Enterprise Edition (Commercial License)
+- Pricing: $4,999 USD (One-time Commercial License) / Upcoming Cloud SaaS
+- Enterprise Capabilities:
+  - Enterprise-grade multi-agent concurrency limits and parallel worktree workers.
+  - Proprietary behavioral verification engines tailored for enterprise codebases.
+  - Turnkey private infrastructure deployment (on-premise or dedicated cloud).
+  - Custom client connectors and webhooks for Jira, Linear, and internal portals.
+  - Dedicated architectural onboarding, SLA, and custom provider connector support.
+  - White-label branding rights and direct priority bridge to the upcoming Foundry Cloud SaaS platform.
+
+## Core Architecture
+
+### Control Loop & Scheduling
+1. Task Ingestion: Tasks enter the FIFO queue via the Web Dashboard, CLI, or API connector.
+2. Dependency Resolution: Tasks with unfinished prerequisite dependencies remain in the waiting queue. Once prerequisites pass, tasks graduate to the ready queue.
+3. Worker Allocation: A pool of concurrent worker agents checks out dedicated Git worktrees branched off origin/main.
+4. Execution Sandbox: Agents run with strict filesystem path confinement and sanitized shell execution.
+5. Deterministic Gateways: Proposed changes are validated with zero LLM overhead using AST pattern matching and test suites.
+6. Gitops Pipeline: Only fully verified tasks are submitted via isolated branches and Pull Requests.
+
+## API & Integration Endpoints
+
+- Web UI & Control Plane: Served on local or reverse-proxied Traefik edge.
+- API Endpoints: Task ingestion (/api/connect/tasks), state inspection, queue metrics, and provider telemetry.
