@@ -8,7 +8,7 @@ Foundry replaces chaotic, prompt-and-pray AI chat interfaces with an industrial 
 
 ## Distribution Tiers
 
-### 1. Foundry Open-Source Core (Public)
+### 1. Foundry Open-Source Variant Core (Public)
 - Repository: https://github.com/ai-supervisor-foundry/foundry
 - License: MIT
 - Scope:
@@ -19,11 +19,11 @@ Foundry replaces chaotic, prompt-and-pray AI chat interfaces with an industrial 
   - Deterministic regex & AST validation engine.
   - Terminal CLI and local Web UI dashboard.
 
-### 2. Foundry Enterprise Edition (Commercial License)
-- Pricing: $4,999 USD (One-time Commercial License) / Upcoming Cloud SaaS
-- Enterprise Capabilities:
-  - Enterprise-grade multi-agent concurrency limits and parallel worktree workers.
-  - Proprietary behavioral verification engines tailored for enterprise codebases.
+### 2. Foundry Production-Grade Edition (Commercial License)
+- Pricing: Custom Commercial & White-Label License (Inquiry via syedahmedhaidershah@yahoo.com) / Upcoming Cloud SaaS
+- Production-Grade Capabilities:
+  - Production-grade multi-agent concurrency limits and parallel worktree workers.
+  - Proprietary behavioral verification engines tailored for production codebases.
   - Turnkey private infrastructure deployment (on-premise or dedicated cloud).
   - Custom client connectors and webhooks for Jira, Linear, and internal portals.
   - Dedicated architectural onboarding, SLA, and custom provider connector support.

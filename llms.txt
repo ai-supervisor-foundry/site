@@ -2,19 +2,19 @@
 
 > Foundry is a persistent orchestration layer for AI-assisted software development, transforming multi-agent coding into an autonomous, deterministic software factory.
 
-Foundry manages long-running development loops with strict sandbox confinement, git worktree isolation, deterministic validation gates, and resilient queue recovery. It is available in two editions: the public open-source core and the extended turnkey in-house enterprise distribution.
+Foundry manages long-running development loops with strict sandbox confinement, git worktree isolation, deterministic validation gates, and resilient queue recovery. It is available in two editions: the public open-source variant core and the extended turnkey in-house production-grade distribution.
 
 ## Repositories & Editions
 
-- [Foundry Open-Source Core](https://github.com/ai-supervisor-foundry/foundry): Public GitHub repository. Self-hostable core orchestration engine, CLI, local task queue, and validation primitives. Free and open source under the MIT license.
-- [Foundry Enterprise Commercial License](https://ai-supervisor-foundry.github.io/site/#editions): Commercial distribution ($4,999 one-time license). High-throughput multi-worktree concurrency, universal MCP bridge, multi-surface control plane, 1 year of continuous updates, and dedicated support SLA (self-hosted, distinct from upcoming cloud SaaS).
+- [Foundry Open-Source Variant Core](https://github.com/ai-supervisor-foundry/foundry): Public GitHub repository. Self-hostable core orchestration engine, CLI, local task queue, and validation primitives. Free and open source under the MIT license.
+- [Foundry Production-Grade Commercial License](https://ai-supervisor-foundry.github.io/site/#editions): Commercial distribution (perpetual self-hosted & white-label license; contact via email inquiry). High-throughput multi-worktree concurrency, universal MCP bridge, multi-surface control plane, 1 year of continuous updates, and dedicated support SLA (self-hosted, distinct from upcoming cloud SaaS).
 - [Upcoming Cloud SaaS](https://ai-supervisor-foundry.github.io/site/#editions): Managed multi-tenant cloud platform on roadmap, featuring a Freemium starter tier for hosted agent execution.
 
 ## System Architecture
 
 - [High-Level Flow](https://ai-supervisor-foundry.github.io/site/#how-it-works): Operator Goal & Task ingestion -> Supervisor Orchestration -> Isolated Git Worktree Execution -> AST/Test Validation Gates -> Verified Shippable PR.
 - [Deep-Dive Architecture](https://ai-supervisor-foundry.github.io/site/#system-architecture): Detailed breakdown of the PM2 supervisor loop, queue locks, multi-provider fallbacks, worker pools, and persistent state storage.
-- [Editions & Commercial Licensing](https://ai-supervisor-foundry.github.io/site/#editions): Comparison of the Open-Source Core vs. the $4,999 Turnkey In-House Enterprise edition and upcoming SaaS.
+- [Editions & Commercial Licensing](https://ai-supervisor-foundry.github.io/site/#editions): Comparison of the Open-Source Variant Core vs. the Turnkey In-House Production-Grade edition and upcoming SaaS.
 
 ## Documentation
 
